@@ -1,0 +1,54 @@
+
+INSERT into shop values('Lotteria','franchise','Lotteria',10000,'card,cash','Honbap shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',8 );
+INSERT into shop values('McDonald','franchise','McDonald',10000,'card,cash','Honbap shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',7 );
+INSERT into shop values('BurgerKing','franchise','BurgerKing',16000,'card,cash','juice shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',8 );
+
+INSERT into shop values('HonBap','1person','HonBap',10000,'card,cash','Honbap shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',8 );
+INSERT into shop values('ModuManJok','1person','ModuManJok',10000,'card,cash','Honbap shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',7 );
+INSERT into shop values('Juicy','1person','Juicy',16000,'card,cash','juice shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',8 );
+
+INSERT into shop values('Goopnae','chicken','Goopnae',16000,'card,cash','chiecken shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',8 );
+INSERT into shop values('BHC','chicken','BHC',18000,'card,cash','chiecken shop','031-123-123','Bundang-gu,Jungja-dong','14:00~24:00',9 );
+INSERT into shop values('BBQ','chicken','BBQ',16000,'card,cash','chiecken shop','031-1234-1234','Bundang-gu,Jungja-dong','14:00~24:00',8 );
+
+
+
+INSERT into menuBoard values('Chicken','BBQ');
+
+INSERT into shop values('Sinjeon','basedfood','Sinjeon',12000,'card,cash','Basedfood shop','031-1234-1234','Bundang-gu,Jungja-dong', '13:00~22:30',6);
+INSERT into shop values('Yeopgi','basedfood','Yeopgi',14000,'card,cash','Basedfood shop','031-1234-1234','Bundang-gu,Jungja-dong', '12:30~23:00',8);
+INSERT into shop values('School','basedfood','School',9000,'card,cash','Basedfood shop','031-1234-1234','Bundang-gu,Jungja-dong', '10:00~21:30',9);
+
+INSERT into shop values('Pizzahut','pizza','Pizzahut',20000,'card,cash','Pizza shop','031-1234-1234','Bundang-gu,Jungja-dong', '16:00~23:30',8);
+INSERT into shop values('Yipizza','pizza','Yipizza',18000,'card,cash','Pizza shop','031-1234-1234','Bundang-gu,Jungja-dong', '14:00~00:30',10);
+INSERT into shop values('Pizzanara','Pizza','pizzanara',17000,'card,cash','Pizza shop','031-1234-1234','Bundang-gu,Jungja-dong', '15:00~23:30',7);
+INSERT into shop values('Pizzazip','Pizza','pizzazip',15000,'card,cash','Pizza shop','031-1234-1234','Bundang-gu,Jungja-dong', '16:00~23:30',9);
+
+INSERT into shop values('Nolbu','foot','Nolbu',20000,'card,cash','Meat shop','031-1234-1234','Bundang-gu,Jungja-dong', '11:30~22:30',8);
+INSERT into shop values('Heungbu','foot','Heungbu',16000,'card,cash','Meat shop','031-1234-1234','Bundang-gu,Jungja-dong', '09:30~21:30',10);
+INSERT into shop values('Zocbo','foot','Zocbo',23000,'card,cash','Meat shop','031-1234-1234','Bundang-gu,Jungja-dong', '12:30~22:30',7);
+
+INSERT into shop values('Sunuri','nightfood','Sunuri',30000,'card,cash','Night food shop','031-1234-1234','Bundang-gu,Jungja-dong', '00:00~24:00',8);
+INSERT into shop values('Gukmul','nightfood','Gukmul',18000,'card,cash','Night food shop','031-1234-1234','Bundang-gu,Jungja-dong', '00:00~24:00',8);
+INSERT into shop values('Yangpun','nightfood','Yangpun',22000,'card,cash','Night food shop','031-1234-1234','Bundang-gu,Jungja-dong', '00:00~24:00',10);
+
+INSERT into shop values('Madam','koreanfood','Madam',30000,'card,cash','Korean food shop','031-1234-1234','Bundang-gu,Jungja-dong', '10:30~24:00',8);
+INSERT into shop values('Lunchbox','koreanfood','Lunchbox',11000,'card,cash','Korean food shop','031-1234-1234','Bundang-gu,Jungja-dong', '10:00~21:00',8);
+INSERT into shop values('Damso','koreanfood','Damso',17000,'card,cash','Korean food shop','031-1234-1234','Bundang-gu,Jungja-dong', '11:00~23:30',8);
+
+INSERT into shop values('Heonyeong','chifood','Heonyeong',18000,'card,cash','Chinese food shop','031-1234-1234','Bundang-gu,Jungja-dong', '00:00~24:00',8);
+INSERT into shop values('Taehwajang','chifood','Taehwajang',16000,'card,cash','Chinese food shop','031-1234-1234','Bundang-gu,Jungja-dong', '09:30~22:30',9);
+INSERT into shop values('Hwaru','chifood','Hwaru',22000,'card,cash','Chinese food shop','031-1234-1234','Bundang-gu,Jungja-dong', '11:00~23:30',6);
+
+INSERT into shop values('Zzesi','japfood','Zzesi',16000,'card,cash','Japanese food shop','031-1234-1234','Bundang-gu,Jungja-dong', '13:00~24:00',10);
+INSERT into shop values('Misoya','japfood','Misoya',17000,'card,cash','Japanese food shop','031-1234-1234','Bundang-gu,Jungja-dong', '12:00~23:30',8);
+INSERT into shop values('Dongatze','japfood','Dongatze',12000,'card,cash','Japanese food shop','031-1234-1234','Bundang-gu,Jungja-dong', '11:30~21:30',7);
+
+
+INSERT into shop values('Juice','cafe','Juice',10000,'card,cash','Cafe shop','031-1234-1234','Bundang-gu,Jungja-dong', '10:30~21:30',8);
+INSERT into shop values('Baskin','cafe','Baskin',11000,'card,cash','Cafe shop','031-1234-1234','Bundang-gu,Jungja-dong', '10:30~22:30',9);
+INSERT into shop values('Parieba','cafe','Parieba',14000,'card,cash','Bread shop','031-1234-1234','Bundang-gu,Jungja-dong', '11:30~22:30',7);
+
+
+
+

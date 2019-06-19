@@ -1,0 +1,252 @@
+mysql 사용자는 root이며
+비밀번호 cs1234
+db이름은 yugiyo 
+로 초기 셋팅 되어있습니다.
+
+-- 고객
+CREATE TABLE `customer` (
+	`CustomerId` VARCHAR(10)  NOT NULL, -- 고객아이디
+	`password`   VARCHAR(20)  NOT NULL, -- 비밀번호
+	`name`       VARCHAR(20)  NOT NULL, -- 이름
+	`tel`        VARCHAR(20)  NOT NULL, -- 전화번호
+	`address`    VARCHAR(100) NULL,     -- 주소
+	`order_num`  INT(10)      NULL,     -- 주문수
+	`review_num` INT(10)      NULL,     -- 리뷰갯수
+	`rank`       VARCHAR(15)  NULL,     -- 등급
+	`point`      INT(10)      NULL      -- 포인트
+);
+
+-- 고객
+ALTER TABLE `customer`
+	ADD CONSTRAINT `PK_customer` -- 고객 기본키
+		PRIMARY KEY (
+			`CustomerId` -- 고객아이디
+		);
+
+-- 리뷰
+CREATE TABLE `review` (
+	`ReviewId`   INT(20)      NOT NULL, -- 리뷰아이디
+	`RBoardID`   VARCHAR(20)  NULL,     -- 리뷰창아이디
+	`CustomerId` VARCHAR(10)  NULL,     -- 고객아이디
+	`detail`     VARCHAR(100) NULL,     -- 내용
+	`date`       DATE         NULL,     -- 작성날짜
+	`reputation` INT(10)      NULL      -- 평점
+);
+
+-- 리뷰
+ALTER TABLE `review`
+	ADD CONSTRAINT `PK_review` -- 리뷰 기본키
+		PRIMARY KEY (
+			`ReviewId` -- 리뷰아이디
+		);
+
+ALTER TABLE `review`
+	MODIFY COLUMN `ReviewId` INT(20) NOT NULL AUTO_INCREMENT;
+
+-- 음식점
+CREATE TABLE `shop` (
+	`ShopId`     VARCHAR(20)  NOT NULL, -- 음식점아이디
+	`type`       VARCHAR(10)  NULL,     -- 타입
+	`name`       VARCHAR(20)  NULL,     -- 이름
+	`reqprice`   INT(10)      NULL,     -- 최소주문금액
+	`payment`    VARCHAR(10)  NULL,     -- 결제방식
+	`info`       VARCHAR(100) NULL,     -- 정보
+	`tel`        VARCHAR(20)  NULL,     -- 전화번호
+	`address`    VARCHAR(50)  NULL,     -- 주소
+	`availTime`  VARCHAR(40)  NULL,     -- 영업시간
+	`reputation` INT(10)      NULL      -- 평점
+);
+
+-- 음식점
+ALTER TABLE `shop`
+	ADD CONSTRAINT `PK_shop` -- 음식점 기본키
+		PRIMARY KEY (
+			`ShopId` -- 음식점아이디
+		);
+
+-- 메뉴
+CREATE TABLE `menu` (
+	`MenuID`   VARCHAR(10) NOT NULL, -- 메뉴아이디
+	`MBoardID` VARCHAR(10) NULL,     -- 메뉴판아이디
+	`name`     VARCHAR(20) NULL,     -- 이름
+	`price`    INT(10)     NULL      -- 가격
+);
+
+-- 메뉴
+ALTER TABLE `menu`
+	ADD CONSTRAINT `PK_menu` -- 메뉴 기본키
+		PRIMARY KEY (
+			`MenuID` -- 메뉴아이디
+		);
+
+-- 주문리스트
+CREATE TABLE `orderList` (
+	`OrderID`    INT(20)      NOT NULL, -- 주문아이디
+	`MenuID`     VARCHAR(10)  NULL,     -- 메뉴아이디
+	`CustomerId` VARCHAR(10)  NULL,     -- 고객아이디
+	`address`    VARCHAR(100) NULL,     -- 배달지
+	`orderdate`  DATETIME     NULL,     -- 주문날짜/시간
+	`quantity`   INT(10)      NULL      -- 수량
+);
+
+-- 주문리스트
+ALTER TABLE `orderList`
+	ADD CONSTRAINT `PK_orderList` -- 주문리스트 기본키
+		PRIMARY KEY (
+			`OrderID` -- 주문아이디
+		);
+
+ALTER TABLE `orderList`
+	MODIFY COLUMN `OrderID` INT(20) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `orderList`
+	AUTO_INCREMENT = 1;
+
+-- 쿠푼
+CREATE TABLE `TABLE6` (
+	`COL`  <데이터 타입 없음> NOT NULL, -- 쿠폰아이디
+	`COL2` <데이터 타입 없음> NULL      -- 할인금액
+);
+
+-- 쿠푼
+ALTER TABLE `TABLE6`
+	ADD CONSTRAINT `PK_TABLE6` -- 쿠푼 기본키
+		PRIMARY KEY (
+			`COL` -- 쿠폰아이디
+		);
+
+-- 메뉴판
+CREATE TABLE `menuBoard` (
+	`MBoardID` VARCHAR(10) NOT NULL, -- 메뉴판아이디
+	`ShopId`   VARCHAR(20) NULL      -- 음식점아이디
+);
+
+-- 메뉴판
+ALTER TABLE `menuBoard`
+	ADD CONSTRAINT `PK_menuBoard` -- 메뉴판 기본키
+		PRIMARY KEY (
+			`MBoardID` -- 메뉴판아이디
+		);
+
+-- 리뷰창
+CREATE TABLE `reviewBoard` (
+	`RBoardID` VARCHAR(20) NOT NULL, -- 리뷰창아이디
+	`ShopId`   VARCHAR(20) NULL      -- 음식점아이디
+);
+
+-- 리뷰창
+ALTER TABLE `reviewBoard`
+	ADD CONSTRAINT `PK_reviewBoard` -- 리뷰창 기본키
+		PRIMARY KEY (
+			`RBoardID` -- 리뷰창아이디
+		);
+
+-- 쿠폰
+CREATE TABLE `coupon` (
+	`CouponId`      VARCHAR(10) NOT NULL, -- 쿠폰아이디
+	`CustomerId`    VARCHAR(10) NULL,     -- 고객아이디
+	`discountPrice` INT(10)     NULL      -- 할인금액
+);
+
+-- 쿠폰
+ALTER TABLE `coupon`
+	ADD CONSTRAINT `PK_coupon` -- 쿠폰 기본키
+		PRIMARY KEY (
+			`CouponId` -- 쿠폰아이디
+		);
+
+-- 쿠푼종류
+CREATE TABLE `TABLE10` (
+	`COL`  <데이터 타입 없음> NOT NULL, -- 쿠폰종류
+	`COL2` <데이터 타입 없음> NOT NULL, -- 쿠폰이름
+	`COL3` <데이터 타입 없음> NOT NULL  -- 할인금액
+);
+
+-- 쿠푼종류
+ALTER TABLE `TABLE10`
+	ADD CONSTRAINT `PK_TABLE10` -- 쿠푼종류 기본키
+		PRIMARY KEY (
+			`COL`,  -- 쿠폰종류
+			`COL2`, -- 쿠폰이름
+			`COL3`  -- 할인금액
+		);
+
+-- 리뷰
+ALTER TABLE `review`
+	ADD CONSTRAINT `FK_customer_TO_review` -- 고객 -> 리뷰
+		FOREIGN KEY (
+			`CustomerId` -- 고객아이디
+		)
+		REFERENCES `customer` ( -- 고객
+			`CustomerId` -- 고객아이디
+		);
+
+-- 리뷰
+ALTER TABLE `review`
+	ADD CONSTRAINT `FK_reviewBoard_TO_review` -- 리뷰창 -> 리뷰
+		FOREIGN KEY (
+			`RBoardID` -- 리뷰창아이디
+		)
+		REFERENCES `reviewBoard` ( -- 리뷰창
+			`RBoardID` -- 리뷰창아이디
+		);
+
+-- 메뉴
+ALTER TABLE `menu`
+	ADD CONSTRAINT `FK_menuBoard_TO_menu` -- 메뉴판 -> 메뉴
+		FOREIGN KEY (
+			`MBoardID` -- 메뉴판아이디
+		)
+		REFERENCES `menuBoard` ( -- 메뉴판
+			`MBoardID` -- 메뉴판아이디
+		);
+
+-- 주문리스트
+ALTER TABLE `orderList`
+	ADD CONSTRAINT `FK_customer_TO_orderList` -- 고객 -> 주문리스트
+		FOREIGN KEY (
+			`CustomerId` -- 고객아이디
+		)
+		REFERENCES `customer` ( -- 고객
+			`CustomerId` -- 고객아이디
+		);
+
+-- 주문리스트
+ALTER TABLE `orderList`
+	ADD CONSTRAINT `FK_menu_TO_orderList` -- 메뉴 -> 주문리스트
+		FOREIGN KEY (
+			`MenuID` -- 메뉴아이디
+		)
+		REFERENCES `menu` ( -- 메뉴
+			`MenuID` -- 메뉴아이디
+		);
+
+-- 메뉴판
+ALTER TABLE `menuBoard`
+	ADD CONSTRAINT `FK_shop_TO_menuBoard` -- 음식점 -> 메뉴판
+		FOREIGN KEY (
+			`ShopId` -- 음식점아이디
+		)
+		REFERENCES `shop` ( -- 음식점
+			`ShopId` -- 음식점아이디
+		);
+
+-- 리뷰창
+ALTER TABLE `reviewBoard`
+	ADD CONSTRAINT `FK_shop_TO_reviewBoard` -- 음식점 -> 리뷰창
+		FOREIGN KEY (
+			`ShopId` -- 음식점아이디
+		)
+		REFERENCES `shop` ( -- 음식점
+			`ShopId` -- 음식점아이디
+		);
+
+-- 쿠폰
+ALTER TABLE `coupon`
+	ADD CONSTRAINT `FK_customer_TO_coupon` -- 고객 -> 쿠폰
+		FOREIGN KEY (
+			`CustomerId` -- 고객아이디
+		)
+		REFERENCES `customer` ( -- 고객
+			`CustomerId` -- 고객아이디
+		);

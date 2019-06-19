@@ -1,0 +1,332 @@
+--메뉴 보드 값부터 먼저 입력
+INSERT into menuBoard values('Chicken','BBQ');
+INSERT into menu values('SChicken','Chicken','schicken',18000);
+INSERT into menu values('HChicken','Chicken','hchicken',19000);
+INSERT into menu values('NChicken','Chicken','nchicken',20000);
+INSERT into menu values('FChicken','Chicken','fchicken',18000);
+
+
+INSERT into menuBoard values('Chicken1','BHC');
+INSERT into menu values('AChicken','Chicken1','achicken',18000);
+INSERT into menu values('BChicken','Chicken1','bchicken',19000);
+
+INSERT into menuBoard values('Chicken2','Goopnae');
+INSERT into menu values('CChicken','Chicken2','cchicken',18000);
+INSERT into menu values('DChicken','Chicken2','dchicken',19000);
+
+INSERT into menuBoard values('person','HonBap');
+INSERT into menu values('A','person','a',14000);
+INSERT into menu values('Bcg','person','bcg',15000);
+INSERT into menu values('C','person','c',17000);
+
+INSERT into menuBoard values('person1','Juicy');
+INSERT into menu values('orang','person1','orang',5000);
+INSERT into menu values('appl','person1','appl',6000);
+INSERT into menu values('kiw','person1','kiw',6000);
+
+INSERT into menuBoard values('person2','ModuManJok');
+INSERT into menu values('Dset','person2','dset',17000);
+INSERT into menu values('Eset','person2','eset',18000);
+INSERT into menu values('Fset','person2','fset',22000);
+
+
+INSERT into menuBoard values('Franchise','BurgerKing');
+INSERT into menu values('Whopper','Franchise','whopper',8000);
+INSERT into menu values('BWhopper','Franchise','bwhopper',9000);
+
+INSERT into menuBoard values('Franchise1','Lotteria');
+INSERT into menu values('shrimp','Franchise1','shrimp',6000);
+INSERT into menu values('bulgog','Franchise1','bulgog',7000);
+INSERT into menu values('ajae','Franchise1','ajae',8000);
+
+INSERT into menuBoard values('Franchise2','Mcdonald');
+INSERT into menu values('bulgogi','Franchise2','bulgogi',7000);
+INSERT into menu values('shanghai','Franchise2','shanghai',7000);
+INSERT into menu values('shrim','Franchise2','shrim',8000);
+
+INSERT into menuBoard values('Basedfood','School');
+INSERT into menu values('tteok','Basedfood','tteok',6000);
+INSERT into menu values('sundae','Basedfood','sundae',6000);
+INSERT into menu values('fry','Basedfood','fry',5000);
+
+INSERT into menuBoard values('basedfood1','Sinjeon');
+INSERT into menu values('Ase','basedfood1','Ase',13000);
+INSERT into menu values('Cse','basedfood1','Dse',14000);
+INSERT into menu values('coolpiec','basedfood1','coolpiec',1000);
+
+INSERT into menuBoard values('basedfood2','Yeopgi');
+INSERT into menu values('Bset','basedfood2','Bset',17000);
+INSERT into menu values('Dse','basedfood2','Dse',18000);
+INSERT into menu values('coolpiece','basedfood2','coolpiece',1000);
+
+INSERT into menuBoard values('pizza','Pizzahut');
+INSERT into menu values('bulpiz','pizza','bulpiz',12000);
+INSERT into menu values('potato','pizza','potato',11000);
+INSERT into menu values('coke','pizza','coke',3000);
+
+INSERT into menuBoard values('pizza1','pizzahut');
+INSERT into menu values('pichiset','pizza1','pichiset',20000);
+INSERT into menu values('spha','pizza1','spha',8000);
+INSERT into menu values('cokes','pizza1','cokes',3000);
+
+INSERT into menuBoard values('pizza2','pizzazip');
+INSERT into menu values('shri','pizza2','shri',15000);
+INSERT into menu values('sphpiset','pizza2','sphpiset',16000);
+INSERT into menu values('cok','pizza2','cok',3000);
+
+INSERT into menuBoard values('pizza3','Yipizza');
+INSERT into menu values('onionpi','pizza3','onionpi',15000);
+INSERT into menu values('deutc','pizza3','deutc',18000);
+INSERT into menu values('co','pizza3','co',3000);
+
+INSERT into menuBoard values('foot','Heungbu');
+INSERT into menu values('zocbose','foot','zocbose',20000);
+INSERT into menu values('zoc','foot','zoc',15000);
+INSERT into menu values('bo','foot','bo',15000);
+
+INSERT into menuBoard values('foot1','Nolbu');
+INSERT into menu values('zocboset','foot1','zocboset',18000);
+INSERT into menu values('zo','foot1','zo',13000);
+INSERT into menu values('b','foot1','b',13000);
+
+INSERT into menuBoard values('foot2','Zocbo');
+INSERT into menu values('aset','foot2','aset',20000);
+INSERT into menu values('bse','foot2','bse',18000);
+INSERT into menu values('cset','foot2','cset',16000);
+
+INSERT into menuBoard values('nightfood','Gukmul');
+INSERT into menu values('dakbal','nightfood','dakbal',16000);
+INSERT into menu values('handbap','nightfood','handbap',5000);
+INSERT into menu values('yuk','nightfood','yuk',8000);
+
+INSERT into menuBoard values('nightfood1','Sunuri');
+INSERT into menu values('gamja','nightfood1','gamja',30000);
+INSERT into menu values('haejang','nightfood1','haejang',9000);
+INSERT into menu values('ramen','nightfood1','ramen',2000);
+
+INSERT into menuBoard values('nightfood2','Yangpun');
+INSERT into menu values('deung','nightfood2','deung',21000);
+INSERT into menu values('handba','nightfood2','handba',5000);
+INSERT into menu values('coolpie','nightfood2','coolpie',1500);
+
+
+INSERT into menuBoard values('koreanfood','Damso');
+INSERT into menu values('sunda','koreanfood','sunda',9000);
+INSERT into menu values('yangji','koreanfood','yangji',8000);
+INSERT into menu values('bossam','koreanfood','bossam',11000);
+
+INSERT into menuBoard values('koreanfoo1','Lunchbox');
+INSERT into menu values('curryrice','koreanfoo1','curryrice',8000);
+INSERT into menu values('soondu','koreanfoo1','soondu',7000);
+INSERT into menu values('chicken','koreanfoo1','chicken',6000);
+
+INSERT into menuBoard values('koreanfoo2','Madam');
+INSERT into menu values('kimchi','koreanfoo2','kimchi',9000);
+INSERT into menu values('mandu','koreanfoo2','mandu',8000);
+INSERT into menu values('suyuk','koreanfoo2','suyuk',7000);
+
+INSERT into menuBoard values('chifood','Heonyeong');
+INSERT into menu values('zz','chifood','zz',7000);
+INSERT into menu values('j','chifood','j',6000);
+INSERT into menu values('goon','chifood','goon',6000);
+
+INSERT into menuBoard values('chifood1','Taehwajang');
+INSERT into menu values('zzam','chifood1','zzam',8000);
+INSERT into menu values('jj','chifood1','jj',6000);
+INSERT into menu values('tangsu','chifood1','tangsu',15000);
+
+INSERT into menuBoard values('chifood2','Hwaru');
+INSERT into menu values('zza','chifood2','zza',7000);
+INSERT into menu values('jja','chifood2','jja',8000);
+INSERT into menu values('1perset','chifood2','1perset',11000);
+
+INSERT into menuBoard values('japfood','Dongatze');
+INSERT into menu values('dongatz','japfood','dongatz',8000);
+INSERT into menu values('udong','japfood','udong',7000);
+INSERT into menu values('momil','japfood','momil',8000);
+
+INSERT into menuBoard values('japfood1','Misoya');
+INSERT into menu values('cheol','japfood1','cheol',7000);
+INSERT into menu values('udon','japfood1','udon',8000);
+INSERT into menu values('gyudong','japfood1','gyudong',9000);
+
+INSERT into menuBoard values('japfood2','Zzesi');
+INSERT into menu values('rame','japfood2','rame',9000);
+INSERT into menu values('curry','japfood2','curry',7000);
+INSERT into menu values('gyudon','japfood2','gyudon',8000);
+
+INSERT into menuBoard values('cafe','Juice');
+INSERT into menu values('orange','cafe','orange',5000);
+INSERT into menu values('apple','cafe','apple',6000);
+INSERT into menu values('kiwie','cafe','kiwie',6000);
+
+INSERT into menuBoard values('cafe1','Baskin');
+INSERT into menu values('alien','cafe1','alien',4000);
+INSERT into menu values('cherry','cafe1','cherry',5000);
+INSERT into menu values('rainbow','cafe1','rainbow',6000);
+
+INSERT into menuBoard values('cafe2','Parieba');
+INSERT into menu values('cake','cafe2','cake',22000);
+INSERT into menu values('galic','cafe2','galic',4000);
+INSERT into menu values('choco','cafe2','choco',5000);
+
+-----------------------------------------------------------------------------------
+
+
+
+
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret0613','1111','sywoo','010-0000-0000','Bundang-gu,Jungja-dong',1,1,'5rank',200);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret0000','1111','david','010-0000-0000','Bundang-gu,Jungja-dong',2,2,'4rank',400);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret1111','1111','choi','010-0000-0000','Bundang-gu,Jungja-dong',3,3,'3rank',600);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret2222','1111','yw','010-0000-0000','Bundang-gu,Jungja-dong',3,3,'3rank',600);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret3333','1111','kim','010-0000-0000','Bundang-gu,Jungja-dong',4,4,'2rank',800);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret4444','1111','lee','010-0000-0000','Bundang-gu,Jungja-dong',5,5,'1rank',1000);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret5555','1111','patrick','010-0000-0000','Bundang-gu,Jungja-dong',6,6,'1rank',1200);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret6666','1111','holla','010-0000-0000','Bundang-gu,Jungja-dong',10,10,'VIP',2000);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret7777','1111','frank','010-0000-0000','Bundang-gu,Jungja-dong',20,20,'VVIP',4000);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret8888','1111','park','010-0000-0000','Bundang-gu,Jungja-dong',8,8,'1rank',1600);
+INSERT into customer (CustomerId,password,name,tel,address,order_num,review_num,rank,point) values('secret9999','1111','woo','010-0000-0000','Bundang-gu,Jungja-dong',6,6,'1rank',1200);
+
+--------------------------------------------------------------------------------------
+
+--customer 추가후 입력
+
+INSERT into reviewBoard values('BBQBrd','BBQ');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BBQBrd','secret7777','tasty',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BBQBrd','secret3333','tasty',curdate(),8);
+
+INSERT into reviewBoard values('BurgerKingBrd','BurgerKing');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BurgerKingBrd','secret3333','tasty',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BurgerKingBrd','secret7777','awful',curdate(),8);
+
+
+INSERT into reviewBoard values('HonBapBrd','HonBap');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HonBapBrd','secret5555','bad',curdate(),4);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HonBapBrd','secret3333','ex',curdate(),10);
+
+INSERT into reviewBoard values('ModuManjokBrd','ModuManjok');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('ModuManjokBrd','secret6666','terrible',curdate(),1);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('ModuManjokBrd','secret3333','bad',curdate(),3);
+
+
+INSERT into reviewBoard values('LotteriaBrd','Lotteria');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('LotteriaBrd','secret7777','verygood',curdate(),9);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('LotteriaBrd','secret5555','good',curdate(),7);
+
+INSERT into reviewBoard values('McdonaldBrd','Mcdonald');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('McdonaldBrd','secret8888','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('McdonaldBrd','secret7777','notb',curdate(),5);
+
+INSERT into reviewBoard values('SchoolBrd','School');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('SchoolBrd','secret5555','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('SchoolBrd','secret7777','bad',curdate(),4);
+
+INSERT into reviewBoard values('SinjeonBrd','Sinjeon');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('SinjeonBrd','secret6666','miss',curdate(),1);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('SinjeonBrd','secret7777','good',curdate(),7);
+
+INSERT into reviewBoard values('YeopgiBrd','Yeopgi');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('YeopgiBrd','secret5555','sogood',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('YeopgiBrd','secret7777','good',curdate(),7);
+
+INSERT into reviewBoard values('PizzahutBrd','Pizzahut');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('PizzahutBrd','secret6666','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('PizzahutBrd','secret7777','ex',curdate(),10);
+
+INSERT into reviewBoard values('pizzanaraBrd','pizzanara');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('pizzanaraBrd','secret7777','terrible',curdate(),0);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('pizzanaraBrd','secret5555','bad',curdate(),4);
+
+INSERT into reviewBoard values('pizzazipBrd','pizzazip');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('pizzazipBrd','secret9999','tasty',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('pizzazipBrd','secret6666','good',curdate(),7);
+
+INSERT into reviewBoard values('YipizzaBrd','Yipizza');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('YipizzaBrd','secret9999','ex',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('YipizzaBrd','secret6666','good',curdate(),7);
+
+INSERT into reviewBoard values('BHCBrd','BHC');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BHCBrd','secret9999','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BHCBrd','secret4444','bad',curdate(),5);
+
+INSERT into reviewBoard values('GoopnaeBrd','Goopnae');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('GoopnaeBrd','secret7777','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('GoopnaeBrd','secret6666','terri',curdate(),0);
+
+INSERT into reviewBoard values('HeungbuBrd','Heungbu');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HeungbuBrd','secret7777','bad',curdate(),4);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HeungbuBrd','secret4444','terri',curdate(),0);
+
+INSERT into reviewBoard values('NolbubuBrd','Nolbu');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('NolbubuBrd','secret8888','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('NolbubuBrd','secret6666','ex',curdate(),10);
+
+INSERT into reviewBoard values('ZocboBrd','Zocbo');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('ZocboBrd','secret8888','notbad',curdate(),5);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('ZocboBrd','secret6666','good',curdate(),7);
+
+INSERT into reviewBoard values('GukmulBrd','Gukmul');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('GukmulBrd','secret6666','bad',curdate(),3);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('GukmulBrd','secret4444','good',curdate(),7);
+
+INSERT into reviewBoard values('SunuriBrd','Sunuri');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('SunuriBrd','secret6666','good',curdate(),7);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('SunuriBrd','secret4444','good',curdate(),7);
+
+
+INSERT into reviewBoard values('YangpunBrd','Yangpun');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('YangpunBrd','secret7777','good',curdate(),7);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('YangpunBrd','secret4444','ex',curdate(),10);
+
+INSERT into reviewBoard values('DamsoBrd','Damso');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('DamsoBrd','secret7777','bad',curdate(),4);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('DamsoBrd','secret2222','soso',curdate(),5);
+
+INSERT into reviewBoard values('LunchboxBrd','Lunchbox');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('LunchboxBrd','secret7777','good',curdate(),7);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('LunchboxBrd','secret2222','soso',curdate(),5);
+
+INSERT into reviewBoard values('MadamBrd','Madam');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('MadamBrd','secret7777','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('MadamBrd','secret8888','good',curdate(),7);
+
+INSERT into reviewBoard values('HeonyeongBrd','Heonyeong');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HeonyeongBrd','secret8888','bad',curdate(),3);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HeonyeongBrd','secret9999','delici',curdate(),7);
+
+INSERT into reviewBoard values('HwaruBrd','Hwaru');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HwaruBrd','secret1111','terrible',curdate(),1);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('HwaruBrd','secret8888','delici',curdate(),8);
+
+INSERT into reviewBoard values('DongatzeBrd','Dongatze');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('DongatzeBrd','secret2222','awful',curdate(),7);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('DongatzeBrd','secret9999','delici',curdate(),8);
+
+INSERT into reviewBoard values('MisoyaBrd','Misoya');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('MisoyaBrd','secret8888','awful',curdate(),7);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('MisoyaBrd','secret9999','soso',curdate(),5);
+
+INSERT into reviewBoard values('ZzesiBrd','Zzesi');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('ZzesiBrd','secret5555','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('ZzesiBrd','secret0000','soso',curdate(),5);
+
+INSERT into reviewBoard values('BaskinBrd','Baskin');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BaskinBrd','secret7777','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('BaskinBrd','secret1111','bad',curdate(),4);
+
+INSERT into reviewBoard values('JuiceBrd','Juice');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('JuiceBrd','secret0000','good',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('JuiceBrd','secret0613','soso',curdate(),5);
+
+
+INSERT into reviewBoard values('JuicyBrd','Juicy');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('JuicyBrd','secret7777','good',curdate(),8);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('JuicyBrd','secret7777','soso',curdate(),5);
+
+INSERT into reviewBoard values('PariebaBrd','Parieba');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('PariebaBrd','secret7777','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('PariebaBrd','secret7777','soso',curdate(),5);
+
+INSERT into reviewBoard values('TaehwajangBrd','Taehwajang');
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('TaehwajangBrd','secret1111','ex',curdate(),10);
+INSERT into review (RBoardID,CustomerId,detail,date,reputation) values('TaehwajangBrd','secret8888','soso',curdate(),5);
